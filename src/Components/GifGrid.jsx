@@ -11,6 +11,20 @@ export const GifGrid = ({category}) => {
     <>
     
         <h3>{category}</h3>
+
+        {/* Esta es una manera de hacerlo y la otra la de abajo */}
+
+        {
+          isLoading && ( <h2>Cargando...</h2> )
+        }
+
+        {/* Esta es una manera de hacerlo
+
+        {
+          isLoading
+          ? ( <h2>Cargando...</h2> )
+          : null 
+        } */}
         <div className="card-grid">
             {/* Otra forma de hacer lo de arriba...
             {
